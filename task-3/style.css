@@ -1,0 +1,77 @@
+
+        html {
+            background-image: url('./assets/background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-family: algerian;
+            color: bisque;
+            text-shadow: 3px 3px gray;
+        }
+
+        .container {
+            background-color: black;
+            box-sizing: border-box;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 440px;
+            display: grid;
+            grid-gap: 6px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .container input{
+            border-radius: 5px;
+            font-size: xx-large;
+            background-color: grey;
+            color: white;
+        }
+        .container input:hover{
+            background-color: rgb(170, 170, 170);
+            cursor: pointer;
+        }
+        .result-area{
+            grid-column: 1/5;
+        }
+        .result-area > input {
+            border: 1px solid white;
+            background-color: black;
+            padding: 8px;
+            appearance: none;
+            box-sizing: border-box;
+            width: 100%;
+            height: 100px!important;
+            margin-bottom: 10px;
+        }
+        .result-area > input:hover {
+            background-color: black;
+            cursor: context-menu;
+        }
+
+        .container input:nth-child(4n+1):not(:nth-child(1)), .container input:nth-child(3), .container input:nth-child(4){
+            background-color: darkorange;
+            color: black;
+        }
+        .container input:nth-child(4n+1):not(:nth-child(1)):hover, .container input:nth-child(3):hover, .container input:nth-child(4):hover{
+            color: white;
+        }
+        .container input:nth-child(2){
+            background-color: orangered;
+            color: black;
+        }
+        .container input:nth-child(2):hover{
+            background-color: red;
+            color: white;
+        }
+        .container input:nth-child(20){
+            background-color: lawngreen;
+            color: black;
+        }
+        .container input:nth-child(20):hover{
+            color: white;
+        }
