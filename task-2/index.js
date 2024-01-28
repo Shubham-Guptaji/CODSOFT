@@ -6,22 +6,27 @@ function navfn(){
     nav = !nav;
 }
 window.addEventListener('resize',()=>{
-    if(window.screen.availWidth > 767){
+    if(window.screen.availWidth > 639){
         document.getElementById("navbar").style.display = "flex";
         nav = false;
-    }else if( window.screen.availWidth < 768){
+    }else if( window.screen.availWidth < 640){
         document.getElementById("navbar").style.display = "none";
         nav = true;
     }
 });
 
+
+
 for(element of document.getElementsByClassName('navbarLink')){
     element.addEventListener('click',() => {
-        document.getElementById("navbar").style.display = "none";
-        nav = !nav;
+        if( window.screen.availWidth < 640){
+            document.getElementById("navbar").style.display = "none";
+            nav = !nav;
+        }else{
+            nav = false;
+        }
     })
 }
-
 
 // move to root function from title
 function moveroot(){ window.location.assign("/")}
