@@ -1,7 +1,10 @@
 Hosted Links of Projects
 
-Task 1 :- ```https://portfolio.alcodemy.in/```
+Task 1 :- Portfolio Site
+```https://portfolio.alcodemy.in/```
 
-Task 2 :- ```https://alcodemy-host.netlify.app/```
+Task 2 :- Web Hosting Page
+```https://alcodemy-host.netlify.app/```
 
-Task 3 :- ```https://shubham-guptaji.github.io/CODSOFT/task-3/```
+Task 3 :- Calculator
+```https://shubham-guptaji.github.io/CODSOFT/task-3/```
